@@ -1,0 +1,11 @@
+void setup()
+{
+ Serial.begin(9600);
+}
+
+void loop()
+{
+  int val=analogRead(A5);
+  int ans=val*5;
+  Serial.println(ans/1023);
+}
